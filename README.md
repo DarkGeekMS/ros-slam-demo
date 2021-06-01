@@ -44,16 +44,38 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
     source devel/setup.bash
     ```
 
--   Run the required packages for the demo.
+-   Run the required packages for the demo :
+    ```bash
+    # Terminal 1 (ROS Master Node)
+    roscore
 
-## Resources
+    # Terminal 2 (TurtleBot3 Gazebo Simulation)
+    cd /home/<username>/workspace/catkin_ws
+    source devel/setup.bash
+    roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
--   [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3) : contains the required packages for __TurtleBot3__ robot model and its controls.
+    # Terminal 3 (TurtleBot3 GMapping SLAM)
+    cd /home/<username>/workspace/catkin_ws
+    source devel/setup.bash
+    roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
--   [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations) : contains the required packages for __TurtleBot3__ robot simulation using _Gazebo_.
+    # Terminal 3 (TurtleBot3 Teleoperation)
+    cd /home/<username>/workspace/catkin_ws
+    source devel/setup.bash
+    roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+    ```
 
--   [slam_gmapping](https://github.com/ros-perception/slam_gmapping) : contains the required packages for __Grid-Based FastSLAM__ using _ROS_ [openslam_gmapping](https://github.com/ros-perception/openslam_gmapping) _SLAM_ library.
+-   Save the output map :
+    ```bash
+    rosrun map_server map_saver -f OutMap
+    ```
 
--   [joystick_drivers](https://github.com/ros-drivers/joystick_drivers) : contains the required packages for controlling a robot through external peripheral (used to navigate the robot during _SLAM_).
+## Used Packages
 
--   [Grid-based-FastSLAM](https://github.com/AndresGarciaEscalante/Grid-based-FastSLAM) : a simple demo example for __Grid-Based FastSLAM__ using an older _ROS_ version (can be used for connecting the packages).
+-   [turtlebot3_gazebo](https://github.com/ROBOTIS-GIT/turtlebot3_simulations) : for __TurtleBot3__ _Gazebo_ simulation.
+
+-   [turtlebot3_slam](https://github.com/ROBOTIS-GIT/turtlebot3) : a wrapper for __slam_gmapping__ package to perform _SLAM_ on __TurtleBot3__.
+
+-   [slam_gmapping](https://github.com/ros-perception/slam_gmapping) : for __Grid-Based FastSLAM__ using _ROS_ [openslam_gmapping](https://github.com/ros-perception/openslam_gmapping) _SLAM_ library.
+
+-   [turtlebot3_teleop](https://github.com/ROBOTIS-GIT/turtlebot3) : for controlling a robot through external peripheral (used to navigate the robot during _SLAM_).
