@@ -14,11 +14,11 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
 
 ## Prerequisites
 
--   ROS
+-   ROS Noetic
 
--   Gazebo
+-   Rviz 1.14.7
 
--   Rviz
+-   Gazebo 11.5
 
 ## Usage
 
@@ -44,6 +44,12 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
     source devel/setup.bash
     ```
 
+-   Source __TurtleBot3__ model to `~/.bashrc` :
+    ```bash
+    echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
+    source ~/.bashrc
+    ```
+
 -   Run the required packages for the demo :
     ```bash
     # Terminal 1 (ROS Master Node)
@@ -52,7 +58,7 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
     # Terminal 2 (TurtleBot3 Gazebo Simulation)
     cd /home/<username>/workspace/catkin_ws
     source devel/setup.bash
-    roslaunch turtlebot3_gazebo turtlebot3_house.launch
+    roslaunch turtlebot3_gazebo turtlebot3_world.launch
 
     # Terminal 3 (TurtleBot3 GMapping SLAM)
     cd /home/<username>/workspace/catkin_ws
