@@ -6,9 +6,9 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
 
 -   Algorithm : __Grid-Based FastSLAM__ (from [slam-gmapping](https://github.com/ros-perception/slam_gmapping))
 
--   Robot : __TurtleBot3__ (from [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3))
+-   Robot : __TurtleBot3 Burger__ (from [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3))
 
--   Sensor : __Laser Range Sensor__
+-   Sensor : __360 Laser Distance Sensor LDS-01__
 
 -   Environment : __Custom__
 
