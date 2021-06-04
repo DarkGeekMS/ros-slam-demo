@@ -20,6 +20,8 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
 
 -   Gazebo 11.5
 
+-   ROS Noetic TurtleBot3 : `sudo apt install ros-noetic-turtlebot3-*`
+
 ## Usage
 
 -   Setup `catkin` workspace :
@@ -69,6 +71,13 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
     cd /home/<username>/workspace/catkin_ws
     source devel/setup.bash
     roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+    ```
+
+-   Alternatively, you can run the demo using a single launch file _[SLOWER]_ :
+    ```bash
+    cd /home/<username>/workspace/catkin_ws
+    source devel/setup.bash
+    roslaunch turtlebot3_gazebo turtlebot3_slam_demo.launch
     ```
 
 -   Save the output map :

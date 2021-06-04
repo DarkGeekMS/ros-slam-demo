@@ -2,8 +2,6 @@
 
 ## BACKLOG
 
-- [ ] Create a single launch file for the whole project.
-
 - [ ] Create a new world file for TurtleBot3
 
 - [ ] Further understand FastSLAM implementation
@@ -23,3 +21,5 @@
 - [x] Get things up and running
 
 - [x] Reorganize the ROS packages.
+
+- [x] Create a single launch file for the whole project.
