@@ -2,8 +2,6 @@
 
 ## BACKLOG
 
-- [ ] Further understand FastSLAM implementation
-
 - [ ] Finish the submission report
 
 - [ ] Finish the submission video
@@ -23,3 +21,5 @@
 - [x] Create a single launch file for the whole project.
 
 - [x] Create a new world file for TurtleBot3
+
+- [x] Further understand FastSLAM implementation
