@@ -2,8 +2,6 @@
 
 ## BACKLOG
 
-- [ ] Finish the submission report
-
 - [ ] Finish the submission video
 
 ## DONE
@@ -23,3 +21,5 @@
 - [x] Create a new world file for TurtleBot3
 
 - [x] Further understand FastSLAM implementation
+
+- [x] Finish the submission report
