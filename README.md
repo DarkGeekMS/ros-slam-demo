@@ -94,3 +94,23 @@ A simple demonstration of __Simultaneous Localization and Mapping__ _(SLAM)_ usi
 -   [slam_gmapping](https://github.com/ros-perception/slam_gmapping) : for __Grid-Based FastSLAM__ using _ROS_ [openslam_gmapping](https://github.com/ros-perception/openslam_gmapping) _SLAM_ library.
 
 -   [turtlebot3_teleop](https://github.com/ROBOTIS-GIT/turtlebot3) : for controlling a robot through external peripheral (used to navigate the robot during _SLAM_).
+
+## Visual Results
+
+<div align=center><img width="50%" height="50%" src="assets/world.png"/></div>
+
+<div align="center">
+Figure(1): World in Gazebo simulator.
+</div><br>
+
+<div align=center><img width="50%" height="50%" src="assets/robot.png"/></div>
+
+<div align="center">
+Figure(2): A 3D view of TurtleBot3 in Gazebo simulator.
+</div><br>
+
+<div align=center><img width="50%" height="50%" src="assets/map.png"/></div>
+
+<div align="center">
+Figure(3): A view of a portion of result occupancy grid map (OGM) in Rvis.
+</div><br>
