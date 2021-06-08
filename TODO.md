@@ -2,8 +2,6 @@
 
 ## BACKLOG
 
-- [ ] Finish the submission video
-
 ## DONE
 
 - [x] Understand the project requirements
@@ -23,3 +21,5 @@
 - [x] Further understand FastSLAM implementation
 
 - [x] Finish the submission report
+
+- [x] Finish the submission video
